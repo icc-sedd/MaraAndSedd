@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MaraAndSedd/static/css/main.a00cf17f.css",
+    "main.js": "/MaraAndSedd/static/js/main.59375464.js",
+    "static/media/bg.png": "/MaraAndSedd/static/media/bg.bbe6b31d7aee8c6c8b63.png",
+    "static/media/AI-photo.jpg": "/MaraAndSedd/static/media/AI-photo.3cdda64a0a8671fa75b7.jpg",
+    "index.html": "/MaraAndSedd/index.html",
+    "main.a00cf17f.css.map": "/MaraAndSedd/static/css/main.a00cf17f.css.map",
+    "main.59375464.js.map": "/MaraAndSedd/static/js/main.59375464.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a00cf17f.css",
+    "static/js/main.59375464.js"
+  ]
+}
