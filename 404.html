@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // GitHub Pages redirect for single page applications
+        // This handles cases where someone visits the root domain with query parameters
+        // and redirects them to the correct repository path
+        
+        const currentUrl = window.location.href;
+        const correctBasePath = '/MaraAndSedd';
+        
+        // If we're on the root domain (icc-sedd.github.io) and not already in the repository path
+        if (window.location.pathname === '/' && !window.location.href.includes('/MaraAndSedd')) {
+            // Redirect to the repository path, preserving any query parameters
+            const newUrl = window.location.origin + correctBasePath + window.location.search + window.location.hash;
+            window.location.replace(newUrl);
+        } else {
+            // If it's a genuine 404, redirect to the repository root
+            window.location.replace(window.location.origin + correctBasePath);
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h2>Redirecting...</h2>
+        <p>You are being redirected to the correct location.</p>
+        <p>If you are not redirected automatically, <a href="/MaraAndSedd">click here</a>.</p>
+    </div>
+</body>
+</html>
