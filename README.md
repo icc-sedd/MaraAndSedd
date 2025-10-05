@@ -2,6 +2,8 @@
 
 A beautiful, responsive wedding website built with React and TypeScript.
 
+🌐 **Live Site**: [https://icc-sedd.github.io/MaraAndSedd](https://icc-sedd.github.io/MaraAndSedd)
+
 ## Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
@@ -76,12 +78,40 @@ The RSVP form in `src/components/RSVP.tsx` currently logs responses to the conso
 
 ## Deployment
 
-This project can be deployed to any static hosting service:
+### GitHub Pages (Automatic)
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Automatic Deployment**: Every push to the `main` branch triggers a GitHub Actions workflow that builds and deploys the site
+2. **Live URL**: The site is available at [https://icc-sedd.github.io/MaraAndSedd](https://icc-sedd.github.io/MaraAndSedd)
+3. **Manual Deployment**: You can also deploy manually using:
+   ```bash
+   npm run deploy
+   ```
+
+### Other Deployment Options
+
+This project can also be deployed to other static hosting services:
 
 - **Netlify**: Connect your Git repository for automatic deployments
-- **Vercel**: Deploy with zero configuration
-- **GitHub Pages**: Free hosting for GitHub repositories
+- **Vercel**: Deploy with zero configuration  
 - **Firebase Hosting**: Google's hosting platform
+
+### GitHub Pages Setup
+
+If you fork this repository, update the `homepage` field in `package.json`:
+
+```json
+{
+  "homepage": "https://your-username.github.io/your-repository-name"
+}
+```
+
+Then enable GitHub Pages in your repository settings:
+1. Go to Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `gh-pages` 
+4. Folder: `/ (root)`
 
 ## License
 
