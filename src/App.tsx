@@ -54,7 +54,8 @@ function App() {
       } else {
         console.log('❌ App: Invalid GuestID format, redirecting to landing page');
         // Invalid format - redirect to landing page immediately
-        window.location.href = window.location.origin;
+        const baseUrl = process.env.PUBLIC_URL || window.location.origin;
+        window.location.href = baseUrl;
         return;
       }
     } else {
