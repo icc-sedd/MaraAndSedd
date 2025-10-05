@@ -49,6 +49,18 @@ function App() {
       const isValidFormat = /^[A-Za-z]{5}$/.test(guestId.trim());
       
       if (isValidFormat) {
+        // Check if we're on the correct URL format
+        const correctUrl = 'https://icc-sedd.github.io/MaraAndSedd/';
+        const currentUrl = window.location.href;
+        
+        // If we're not on the correct base URL, redirect to the correct one
+        if (!currentUrl.startsWith(correctUrl)) {
+          const redirectUrl = `${correctUrl}?GuestID=${guestId.trim()}`;
+          console.log('🔄 App: Redirecting to correct URL:', redirectUrl);
+          window.location.href = redirectUrl;
+          return;
+        }
+        
         setHasGuestId(true);
         console.log('✅ App: Valid GuestID format found, showing full website');
       } else {
