@@ -50,7 +50,7 @@ function App() {
       
       if (isValidFormat) {
         // Check if we're on the correct URL format
-        const correctUrl = 'https://icc-sedd.github.io/MaraAndSedd/';
+        const correctUrl = 'https://icc-sedd.github.io/';
         const currentUrl = window.location.href;
         
         // If we're not on the correct base URL, redirect to the correct one

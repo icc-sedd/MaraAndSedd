@@ -2,7 +2,7 @@
   "name": "weddingsite",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://icc-sedd.github.io/MaraAndSedd",
+  "homepage": "https://icc-sedd.github.io",
   "description": "A beautiful wedding website built with React and TypeScript",
   "scripts": {
     "start": "react-scripts start",

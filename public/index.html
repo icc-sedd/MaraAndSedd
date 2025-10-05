@@ -12,18 +12,6 @@
     <title>Sedd and Mara</title>
     <!-- Google API Script -->
     <script src="https://apis.google.com/js/api.js"></script>
-    
-    <!-- GitHub Pages redirect handler -->
-    <script>
-      // Handle redirect from root domain to repository path
-      if (window.location.hostname === 'icc-sedd.github.io' && 
-          window.location.pathname === '/' && 
-          window.location.search) {
-        // If we're on the root with query parameters, redirect to repository path
-        const correctUrl = window.location.origin + '/MaraAndSedd' + window.location.search + window.location.hash;
-        window.location.replace(correctUrl);
-      }
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
